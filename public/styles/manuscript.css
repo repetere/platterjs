@@ -1,0 +1,101 @@
+#_pltrContainer {
+  background: rgba(239, 239, 239, 0.8);
+  height: 2em;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+}
+#_pltrContainer._pltr-bottom {
+  bottom: -1.75em;
+  left: 0;
+}
+#_pltrContainer ._pltr-tab {
+  float: left;
+  display: block;
+  margin: 0.25em 0.5em;
+  height: 1.0em;
+  line-height: 1.0em;
+  border: .1em solid #efefef;
+  padding: 0.25em;
+  background: #fff;
+  bottom: 1.2em;
+  position: relative;
+  -webkit-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  -moz-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  -ms-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  -o-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+}
+#_pltrContainer ._pltr-tab:hover {
+  bottom: 1.6em;
+}
+#_pltrContainer ._pltr-tab._pltr-hide {
+  -webkit-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  -moz-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  -ms-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  -o-transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  transition: bottom 0.1s ease-in 0.2s, width 0.3s ease-in;
+  bottom: .7em;
+  width: 0.7em;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
+}
+#_pltrContainer ._pltr-tab._pltr-hide:hover {
+  width: auto;
+  bottom: 1.6em;
+}
+#_pltrContainer ._pltr-tab ._pltr-open-window {
+  cursor: pointer;
+  margin-left: 0.5em;
+  font-weight: bold;
+  top: -17%;
+  position: relative;
+  font-size: 75%;
+}
+#_pltrContainer #_pltr-elementsContainer {
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.6);
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-transition: width 0.1s ease-out;
+  -moz-transition: width 0.1s ease-out;
+  -ms-transition: width 0.1s ease-out;
+  -o-transition: width 0.1s ease-out;
+  transition: width 0.1s ease-out;
+}
+#_pltrContainer #_pltr-elementsContainer._pltr-right {
+  right: 0em;
+  bottom: 0em;
+  border-left: .2em solid #efefef;
+}
+#_pltrContainer #_pltr-elementsContainer._pltr-right #_pltr-ecmc {
+  right: 0;
+  margin-right: 1em;
+}
+#_pltrContainer #_pltr-elementsContainer ._pltr-elementItem {
+  margin: .3em;
+  background: rgba(255, 255, 255, 0.9);
+  min-height: 15em;
+}
+#_pltrContainer #_pltr-elementsContainer #_pltr-ecmc {
+  background: rgba(200, 200, 200, 0.6);
+  width: 1.5em;
+  position: fixed;
+  text-align: center;
+  padding: .1em .3em;
+  height: 0;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: height 0.1s ease-in;
+  -moz-transition: height 0.1s ease-in;
+  -ms-transition: height 0.1s ease-in;
+  -o-transition: height 0.1s ease-in;
+  transition: height 0.1s ease-in;
+}
+#_pltrContainer #_pltr-elementsContainer #_pltr-ecmc:hover,
+#_pltrContainer #_pltr-elementsContainer #_pltr-ecmc._pltr-expanded {
+  height: 1.3em;
+}
